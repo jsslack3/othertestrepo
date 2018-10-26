@@ -1,0 +1,10 @@
+# SlashDeploy configuration file
+version: 1
+environments:
+  production:
+    aliases:
+      - prod
+    checks:
+      - ci/circleci
+    auto_deploy:
+      ref: refs/heads/master
